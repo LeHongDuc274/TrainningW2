@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="@dimen/dp93" />
+        app:layout_constraintGuide_begin="@dimen/dp60" />
 
     <View
         android:id="@+id/view2"

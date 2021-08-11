@@ -5,12 +5,14 @@
     android:layout_height="?actionBarSize"
     android:background="@color/pale_grey">
 
-    <ImageView
+    <Button
+        style="?attr/borderlessButtonStyle"
         android:id="@+id/arrow_back_1"
-        android:paddingHorizontal="@dimen/dp10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_group_8" />
+        android:layout_width="50dp"
+        android:layout_height="@dimen/dp24"
+        android:layout_marginEnd="@dimen/dp12"
+        android:backgroundTint="@color/pale_grey"
+        android:drawableLeft="@drawable/ic_group_8" />
 
     <TextView
         android:id="@+id/tv_toolbar"

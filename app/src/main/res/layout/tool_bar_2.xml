@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tool_bar_2"
+    android:background="@color/daskish_blur">
+
+    <Button
+        style="?attr/borderlessButtonStyle"
+        android:backgroundTint="@color/daskish_blur"
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/dp36"
+        android:layout_height="@dimen/dp36"
+        android:drawableLeft="@drawable/ic_group_8"
+        android:drawableTint="@color/white_three"
+        android:paddingHorizontal="@dimen/dp10"
+        />
+
+</androidx.appcompat.widget.Toolbar>

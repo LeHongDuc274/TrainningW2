@@ -24,4 +24,7 @@
     <string name="emptyvalue">0.00€</string>
     <string name="t_pagas">Tu pagas</string>
     <string name="number">****9889</string>
+    <string name="cuentas_bancarias_y_tarjetas">Cuentas bancarias y tarjetas</string>
+    <string name="mantenemos">Mantenemos tus datos financieros protegidos para que nadie vea la información confidencial.</string>
+    <string name="mis_tarjetas">Mis tarjetas</string>
 </resources>
