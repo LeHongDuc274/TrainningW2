@@ -3,15 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.175" />
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/drawable/account_balance_shape.xml" value="0.215625" />
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/drawable/amount_shape_2.xml" value="0.215625" />
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/drawable/divider_item.xml" value="0.33" />
         <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/drawable/fab_shape.xml" value="0.215625" />
         <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/drawable/ic_assignment_returned_black_18_dp_copy.xml" value="0.215625" />
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/drawable/ic_settings_black_18_dp.xml" value="0.175" />
         <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/drawable/paypal_card_shape.xml" value="0.215625" />
         <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/drawable/rectangle_white_shape.xml" value="0.215625" />
         <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/drawable/tv_1_shape.xml" value="0.215625" />
         <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/drawable/tv_4_shape.xml" value="0.215625" />
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/layout/activity_cards.xml" value="0.15833333333333333" />
         <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/layout/child_layout.xml" value="0.33" />
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/layout/activity_pay.xml" value="0.33" />
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/layout/child_layout.xml" value="0.20572916666666666" />
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/layout/contact_item.xml" value="0.19947916666666668" />
         <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/layout/contact_layout.xml" value="0.19947916666666668" />
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/layout/history_item.xml" value="0.25" />
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/layout/pay_body_layout.xml" value="0.25" />
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/layout/pay_detail.xml" value="0.25" />
+        <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/layout/tool_bar.xml" value="0.15833333333333333" />
         <entry key="..\:/Trainning/Week2/TrainningW2/app/src/main/res/menu/bottom_app_bar_menu.xml" value="0.19947916666666668" />
       </map>
     </option>

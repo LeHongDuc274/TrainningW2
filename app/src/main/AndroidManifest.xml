@@ -10,8 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PaypalUI">
         <activity
+            android:name=".CardsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PayActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

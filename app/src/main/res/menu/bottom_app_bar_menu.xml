@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/uploadMenu"
+        android:id="@+id/dashboard"
         android:icon="@drawable/ic_assignment_returned_black_18_dp"
         android:title="Envir"
        />
@@ -13,7 +13,7 @@
 <!--        app:showAsAction="ifRoom" />-->
 
     <item
-        android:id="@+id/noneMenu2"
+        android:id="@+id/pay"
         android:checkable="false"
         android:title="Recibir"
         />
@@ -24,7 +24,7 @@
 <!--        app:showAsAction="ifRoom"-->
 <!--        />-->
     <item
-        android:id="@+id/profileMenu"
+        android:id="@+id/cards"
         android:icon="@drawable/ic_shape"
         android:title="Perfil"
          />

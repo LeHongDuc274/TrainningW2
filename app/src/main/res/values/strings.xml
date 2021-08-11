@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">PaypalUI</string>
+    <string name="hoy">HOY</string>
+    <string name="nina_te_ha_enviado">Nina te ha enviado</string>
+    <string name="amount20">20,00€</string>
+    <string name="ver_detalles">VER DETALLES</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="por_la_cena">Por la cena . . .</string>
+    <string name="cake">🍕</string>
+    <string name="enviar_de_nuevo">Enviar de nuevo</string>
+    <string name="actividad">Actividad</string>
+    <string name="ver_m_s_movimientos">Ver más movimientos</string>
+    <string name="el_corte_ingl_s">El corte inglés</string>
+    <string name="revisar_y_enviar">Revisar y enviar</string>
+    <string name="enviar_ahora">ENVIAR AHORA</string>
+    <string name="david_paz">David Paz</string>
+    <string name="davidpaz_correo_com">davidpaz@correo.com</string>
+    <string name="este_es_el_dinero_de_la_entradas">Este es el entrants…</string>
+    <string name="film_icon">🎬</string>
+    <string name="tipo_de_pago">Tipo de pago</string>
+    <string name="personal">Personal</string>
+    <string name="bbva">BBVA</string>
+    <string name="tarifas_por_transacci_n">Tarifas por transacción</string>
+    <string name="emptyvalue">0.00€</string>
+    <string name="t_pagas">Tu pagas</string>
+    <string name="number">****9889</string>
 </resources>

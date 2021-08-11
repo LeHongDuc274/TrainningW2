@@ -10,20 +10,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp" />
+        app:layout_constraintGuide_begin="@dimen/dp16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/dp16" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="18dp" />
+        app:layout_constraintGuide_end="@dimen/dp16" />
 
     <ImageView
         android:id="@+id/iv_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="@dimen/dp5"
         android:src="@drawable/bitmap_copy_2"
         app:layout_constraintBottom_toBottomOf="@+id/iv_2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
@@ -33,7 +40,7 @@
         android:id="@+id/iv_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/dp20"
         android:src="@drawable/ic_group"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
@@ -43,7 +50,7 @@
         android:id="@+id/iv_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="@dimen/dp5"
         android:src="@drawable/ic_settings_black_18_dp"
         app:layout_constraintBottom_toBottomOf="@+id/iv_2"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -53,36 +60,40 @@
         android:id="@+id/view"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/paypal_card_shape"
         app:layout_constraintDimensionRatio="2:1.25"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/iv_2" />
 
     <ImageView
         android:id="@+id/iv_4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_marginStart="@dimen/dp30"
         android:src="@drawable/bitmap_copy"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/tv_1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.084" />
 
     <TextView
+        android:fontFamily="@font/montserrat_semibold"
         android:id="@+id/tv_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginTop="@dimen/dp23"
+        android:layout_marginEnd="@dimen/dp14"
         android:background="@drawable/tv_1_shape"
-        android:paddingHorizontal="15dp"
-        android:paddingVertical="5dp"
-        android:text="HOY"
-        android:textColor="#3a2424"
-        android:textSize="12sp"
+        android:paddingHorizontal="@dimen/dp15"
+        android:paddingVertical="@dimen/dp5"
+        android:text="@string/hoy"
+        android:textColor="@color/color5"
+        android:textSize="@dimen/sp12"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
@@ -90,11 +101,14 @@
         android:id="@+id/tv_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="6dp"
-        android:text="Nina te ha enviado"
+        android:layout_marginStart="@dimen/dp28"
+        android:layout_marginTop="@dimen/dp6"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/nina_te_ha_enviado"
         android:textColor="@color/white"
-        android:textSize="14sp"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toBottomOf="@+id/iv_4" />
 
@@ -102,36 +116,44 @@
         android:id="@+id/tv_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
-        android:text="20,00€"
+        android:layout_marginStart="@dimen/dp28"
+        android:layout_marginTop="@dimen/dp20"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/amount20"
         android:textColor="@color/white"
-        android:textSize="28sp"
+        android:textSize="@dimen/sp28"
         app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/iv_4" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_2" />
 
     <TextView
         android:id="@+id/tv_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp28"
+        android:layout_marginTop="@dimen/dp12"
         android:background="@drawable/tv_4_shape"
-        android:paddingHorizontal="21dp"
-        android:paddingVertical="7dp"
-        android:text="VER DETALLES"
+        android:fontFamily="@font/montserrat_semibold"
+        android:paddingHorizontal="@dimen/dp21"
+        android:paddingVertical="@dimen/dp7"
+        android:text="@string/ver_detalles"
         android:textColor="@color/white"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="232dp" />
+        android:textSize="@dimen/sp12"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_3"
+        app:layout_constraintVertical_bias="0.148" />
 
     <TextView
         android:id="@+id/tv_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="93dp"
+        android:layout_marginStart="@dimen/dp84"
         android:layout_marginTop="0dp"
-        android:text="Mensaje"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/mensaje"
         android:textColor="@color/white"
-        android:textSize="10sp"
+        android:textSize="@dimen/sp10"
+        app:layout_constraintEnd_toStartOf="@+id/tv_7"
         app:layout_constraintStart_toEndOf="@+id/tv_4"
         app:layout_constraintTop_toTopOf="@+id/tv_4" />
 
@@ -139,70 +161,104 @@
         android:id="@+id/tv_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:text="Por la cena..."
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/por_la_cena"
         android:textColor="@color/white"
-        android:textSize="14sp"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/tv_7"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tv_5"
-        app:layout_constraintTop_toBottomOf="@+id/tv_5" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_5"
+        app:layout_constraintVertical_bias="0.028" />
 
     <TextView
         android:id="@+id/tv_7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text=" 🍕"
-        android:textColor="#022c59"
-        android:textSize="14sp"
+        android:layout_marginEnd="@dimen/dp20"
+        android:padding="@dimen/dp10"
+        android:text="@string/cake"
+        android:textColor="@color/marine"
+        android:textSize="@dimen/sp14"
         app:layout_constraintBottom_toBottomOf="@+id/tv_6"
         app:layout_constraintEnd_toEndOf="@+id/tv_1" />
 
     <TextView
+        android:fontFamily="@font/montserrat_semibold"
         android:id="@+id/tv_8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        android:text="Enviar de nuevo"
-        android:textColor="#003087"
-        android:textSize="14sp"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp28"
+        android:text="@string/enviar_de_nuevo"
+        android:textColor="@color/daskish_blur"
+        android:textSize="@dimen/sp14"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="@dimen/dp9"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/tv_8">
 
-        <include layout="@layout/contact_layout" />
-
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+        <!--        <include layout="@layout/contact_layout" />-->
     </HorizontalScrollView>
 
     <TextView
+        android:fontFamily="@font/montserrat_semibold"
         android:id="@+id/tv_9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="19dp"
-        android:text="Actividad"
-        android:textColor="#003087"
-        android:textSize="14sp"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp19"
+        android:text="@string/actividad"
+        android:textColor="@color/daskish_blur"
+        android:textSize="@dimen/sp14"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
     <TextView
+        android:fontFamily="@font/montserrat_medium"
         android:id="@+id/tv_10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:text="Ver más movimientos"
-        android:textColor="#025ed7"
-        android:textSize="12sp"
+        android:layout_marginEnd="@dimen/dp5"
+        android:text="@string/ver_m_s_movimientos"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sp12"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/tv_9" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginEnd="0dp"
+        app:cardCornerRadius="@dimen/dp10"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintDimensionRatio="2:1.1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_9">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

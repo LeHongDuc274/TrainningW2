@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_grey"
+    android:id="@+id/pay_root"
+    tools:context=".PayActivity">
+
+    <include layout="@layout/tool_bar" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/pay_body_layout"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:id="@+id/fab_2"
+        android:layout_marginBottom="@dimen/dp40"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:text="@string/enviar_ahora"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/dp93"
+        android:paddingVertical="@dimen/dp21"
+        app:backgroundTint="@color/peacock_blue"
+        app:cornerRadius="@dimen/dp30"
+        />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

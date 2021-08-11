@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dp16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dp16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/dp93" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/account_balance_shape"
+        app:layout_constraintDimensionRatio="3.25:1.9"
+        app:layout_constraintEnd_toStartOf="@+id/line_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/line_1"
+        app:layout_constraintTop_toTopOf="@+id/line_3" />
+
+    <ImageView
+        android:id="@+id/iv_pay_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp26"
+        android:layout_marginTop="@dimen/dp17"
+        android:src="@drawable/bitmap"
+        app:layout_constraintEnd_toStartOf="@+id/line_2"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/line_1"
+        app:layout_constraintTop_toTopOf="@+id/line_3" />
+
+    <TextView
+        android:id="@+id/tv_pay_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp36"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/david_paz"
+        android:textColor="@color/color6"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintStart_toStartOf="@+id/line_1"
+        app:layout_constraintTop_toBottomOf="@+id/iv_pay_1" />
+
+    <TextView
+        android:id="@+id/tv_pay_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp36"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/davidpaz_correo_com"
+        android:textColor="@color/warm_grey"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintStart_toStartOf="@+id/line_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay_1" />
+
+    <TextView
+        android:id="@+id/tv_pay_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp36"
+        android:layout_marginTop="@dimen/dp16"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/mensaje"
+        android:textColor="@color/color6"
+        android:textSize="@dimen/sp10"
+        app:layout_constraintStart_toStartOf="@+id/line_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay_2" />
+
+    <TextView
+        android:id="@+id/tv_pay_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp36"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/este_es_el_dinero_de_la_entradas"
+        android:textColor="@color/six_six"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/line_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay_5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_pay_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp36"
+        android:layout_marginTop="@dimen/dp3"
+        android:text="@string/film_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toStartOf="@+id/line_2"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toEndOf="@+id/tv_pay_6"
+        app:layout_constraintTop_toTopOf="@+id/tv_pay_6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_pay_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/amount_shape_2"
+        android:fontFamily="@font/montserrat_semibold"
+        android:paddingHorizontal="@dimen/dp24"
+        android:paddingTop="@dimen/dp9"
+        android:paddingBottom="@dimen/dp10"
+        android:text="@string/amount20"
+        android:textColor="@color/white_three"
+        android:textSize="@dimen/sp20"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_pay_2"
+        app:layout_constraintEnd_toStartOf="@+id/line_2"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toEndOf="@+id/tv_pay_2"
+        app:layout_constraintTop_toTopOf="@+id/tv_pay_1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iv_pay_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp28"
+        android:layout_marginTop="@dimen/dp28"
+        android:src="@drawable/shape"
+        app:layout_constraintEnd_toStartOf="@+id/line_2"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toEndOf="@+id/iv_pay_1"
+        app:layout_constraintTop_toTopOf="@+id/line_3" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp36"
+        app:cardCornerRadius="@dimen/dp10"
+        android:background="@color/six_six"
+        app:layout_constraintEnd_toStartOf="@+id/line_2"
+        app:layout_constraintStart_toStartOf="@+id/line_1"
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+    <include layout="@layout/pay_detail"/>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

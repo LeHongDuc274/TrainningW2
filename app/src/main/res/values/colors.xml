@@ -8,5 +8,25 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="pale_grey">#F6F8FA</color>
+    <color name="black_amount">#1b1b1b</color>
+    <color name="back_ground_color">#f9f9f9</color>
+    <color name="ocean_blue">#005ebc</color>
+    <color name="daskish_blur">#003087 </color>
+    <color name="white_three">#ffffff</color>
+    <color name="six_six">#666666</color>
+    <color name="cerulean_blue">#0262e9 </color>
+    <color name="peacock_blue">#0054ae</color>
+    <color name="color1">#dd0164</color>
+    <color name="color2">#d8d8d8</color>
+    <color name="color3">#009cde</color>
+    <color name="color4">#012169</color>
+    <color name="pale_peach">#fff0b4</color>
+    <color name="color5">#3a2424</color>
+    <color name="marine">#022c59</color>
+    <color name="color6">#1b1b1b</color>
+    <color name="color7">#00c55b</color>
+    <color name="warm_grey">#999999</color>
+    <color name="blue">#025ed7</color>
+    <color name="green_blue">#00D090</color>
 
 </resources>

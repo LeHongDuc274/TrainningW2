@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <gradient android:startColor="#003087"
-        android:endColor="#005ebc"
-        android:angle="90"
-       android:type="linear"
-        />
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="oval">
+            <gradient
+                android:angle="90"
+                android:endColor="#005ebc"
+                android:startColor="#003087"
+                android:type="linear" />
+        </shape>
+    </item>
+    <item android:gravity="center"
+        >
+        <bitmap android:src="@drawable/ic_assignment_returned_black_18_dp_copy"
+            android:gravity="center" />
+    </item>
+</layer-list>
