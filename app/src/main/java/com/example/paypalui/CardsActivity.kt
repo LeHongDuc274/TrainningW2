@@ -35,15 +35,15 @@ class CardsActivity : AppCompatActivity() {
     }
 
     private fun initItemCard() {
-        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9889"))
-        cards.add(Card(R.drawable.ic_combined_shape,"Visa-black","****9896"))
-        cards.add(Card(R.drawable.ic_combined_shape,"Visa","****9823"))
-        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9823"))
-        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9239"))
-        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9239"))
-        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9239"))
-        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9239"))
-        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9239"))
+        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9889",false))
+        cards.add(Card(R.drawable.ic_combined_shape,"Visa-black","****9896",false))
+        cards.add(Card(R.drawable.ic_combined_shape,"visa","****9823",false))
+        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9823",false))
+        cards.add(Card(R.drawable.ic_mastercard_2,"Visa","****9239",false))
+        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9239",false))
+        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9239",false))
+        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9239",false))
+        cards.add(Card(R.drawable.ic_mastercard_2,"Mastercard","****9239",false))
 
     }
 }
