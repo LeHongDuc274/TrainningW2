@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.paypalui.adapter.Card
 import com.example.paypalui.adapter.ListCardAdapter
-import kotlinx.android.synthetic.main.activity_cards.*
+import kotlinx.android.synthetic.main.cards_body.*
 import kotlinx.android.synthetic.main.tool_bar_2.*
 
 class CardsActivity : AppCompatActivity() {

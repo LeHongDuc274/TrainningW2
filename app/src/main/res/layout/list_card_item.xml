@@ -8,26 +8,35 @@
     android:background="@color/white_three"
     app:cardCornerRadius="@dimen/dp5">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/col_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
     <ImageView
         android:id="@+id/iv_item_1"
-        android:layout_width="wrap_content"
-        android:layout_height="36dp"
-        android:layout_marginStart="@dimen/dp21"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dp16"
         android:layout_marginTop="@dimen/dp17"
         android:layout_marginBottom="@dimen/dp16"
         android:src="@drawable/ic_mastercard_2"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/col_1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_item_1"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp16"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/montserrat_semibold"
-        android:text="text"
+        android:text="@string/text"
         android:textColor="@color/color6"
         android:textSize="@dimen/sp16"
         app:layout_constraintBottom_toTopOf="@id/tv_item_2"
@@ -48,43 +57,58 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_item_1"
         app:layout_constraintVertical_bias="0.0" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/col_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.64" />
+
+
+    <ImageButton
+        android:id="@+id/btn_create"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/daskish_blur"
+        android:src="@drawable/ic_create_black_18_dp_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/col_3"
+        app:layout_constraintStart_toStartOf="@id/col_2"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/col_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <ImageButton
+        android:id="@+id/btn_delete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        android:src="@drawable/ic_delete_outline_black_18_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/col_4"
+        app:layout_constraintStart_toStartOf="@id/col_3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/col_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
     <ImageButton
         android:id="@+id/btn_show_menu"
-        android:layout_width="@dimen/dp40"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="@dimen/dp12"
         android:background="@color/white_three"
         android:src="@drawable/ic_more_vert_black_18_dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/btn_create"
-        android:layout_width="@dimen/dp40"
-        android:layout_height="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="@color/daskish_blur"
-        android:src="@drawable/ic_create_black_18_dp_2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_delete"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tv_item_1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/btn_delete"
-        android:layout_width="@dimen/dp40"
-        android:layout_height="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="@color/blue"
-        android:src="@drawable/ic_delete_outline_black_18_dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_show_menu"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_goneMarginEnd="0dp" />
-
+        app:layout_constraintStart_toStartOf="@id/col_4"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

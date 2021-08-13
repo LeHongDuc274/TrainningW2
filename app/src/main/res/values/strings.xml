@@ -5,7 +5,7 @@
     <string name="amount20">20,00€</string>
     <string name="ver_detalles">VER DETALLES</string>
     <string name="mensaje">Mensaje</string>
-    <string name="por_la_cena">Por la cena . . .</string>
+    <string name="por_la_cena">Por la cena...</string>
     <string name="cake">🍕</string>
     <string name="enviar_de_nuevo">Enviar de nuevo</string>
     <string name="actividad">Actividad</string>
@@ -27,4 +27,5 @@
     <string name="cuentas_bancarias_y_tarjetas">Cuentas bancarias y tarjetas</string>
     <string name="mantenemos">Mantenemos tus datos financieros protegidos para que nadie vea la información confidencial.</string>
     <string name="mis_tarjetas">Mis tarjetas</string>
+    <string name="text">text</string>
 </resources>

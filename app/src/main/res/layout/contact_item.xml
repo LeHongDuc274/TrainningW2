@@ -5,25 +5,29 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="@dimen/dp15">
 
+
+
     <ImageView
         android:id="@+id/iv_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_margin="@dimen/dp8"
+        android:scaleType="fitXY"
         android:src="@drawable/bitmap_copy"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintStart_toStartOf="@id/tv_item"
+        app:layout_constraintEnd_toEndOf="@id/tv_item"
+        app:layout_constraintTop_toTopOf="parent"
+         />
     <TextView
-        android:fontFamily="@font/montserrat_semibold"
         android:id="@+id/tv_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp9"
+        android:fontFamily="@font/montserrat_semibold"
         android:text="Carlos Roca"
         android:textColor="#666666"
-        android:textSize="@dimen/sp10"
-        android:layout_marginTop="@dimen/dp9"
-        app:layout_constraintStart_toStartOf="@id/iv_item"
-        app:layout_constraintEnd_toEndOf="@id/iv_item"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

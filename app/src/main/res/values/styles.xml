@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="text_view_1">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="text_view_ved_details">
+        <item name="android:paddingRight">@dimen/dp21</item>
+        <item name="android:paddingLeft">@dimen/dp21</item>
+        <item name="android:paddingTop">@dimen/dp7</item>
+        <item name="android:paddingBottom">@dimen/dp7</item>
+        <item name="android:textSize">@dimen/sp12</item>
+    </style>
+
 </resources>

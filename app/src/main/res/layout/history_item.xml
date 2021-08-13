@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp19"
         android:layout_marginTop="@dimen/dp16"
-        android:layout_marginEnd="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp19"
         android:text="@string/el_corte_ingl_s"
         android:textColor="@color/color6"
         android:textSize="@dimen/sp16"
@@ -46,10 +46,9 @@
         app:layout_constraintStart_toEndOf="@id/rv_history_tv_1"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
     <TextView
-        android:layout_marginHorizontal="@dimen/dp30"
+
+        android:layout_marginHorizontal="@dimen/dp19"
         android:layout_marginVertical="@dimen/dp5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

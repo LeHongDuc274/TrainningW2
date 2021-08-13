@@ -6,6 +6,20 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_vertical1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_vertical2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,24 +40,54 @@
         android:orientation="vertical"
         app:layout_constraintGuide_end="@dimen/dp16" />
 
-    <ImageView
-        android:id="@+id/iv_1"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dp5"
-        android:src="@drawable/bitmap_copy_2"
+        android:tint="@color/pale_grey"
         app:layout_constraintBottom_toBottomOf="@+id/iv_2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toTopOf="@+id/iv_2" />
+        app:layout_constraintTop_toTopOf="@+id/iv_2">
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_margin="@dimen/dp2"
+            android:scaleType="fitXY"
+            android:src="@drawable/bitmap_copy_2" />
+
+        <ImageView
+            android:id="@+id/iv_red_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/red_dot" />
+    </androidx.cardview.widget.CardView>
+
 
     <ImageView
         android:id="@+id/iv_2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginTop="16dp"
         android:src="@drawable/ic_group_paypal"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintEnd_toStartOf="@+id/line_vertical2"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="@+id/line_vertical1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -60,42 +104,56 @@
         android:id="@+id/view"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/paypal_card_shape"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
         app:layout_constraintDimensionRatio="2:1.25"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/iv_2" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/iv_4"
-        android:layout_width="@dimen/dp60"
-        android:layout_height="@dimen/dp60"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="@dimen/dp30"
+        android:layout_marginEnd="@dimen/dp30"
         android:src="@drawable/bitmap_copy"
         app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toStartOf="@+id/tv_1"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/line_vertical1"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/view"
         app:layout_constraintVertical_bias="0.084" />
 
     <TextView
-        android:fontFamily="@font/montserrat_semibold"
         android:id="@+id/tv_1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp23"
-        android:layout_marginEnd="@dimen/dp14"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+
         android:background="@drawable/tv_1_shape"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
         android:paddingHorizontal="@dimen/dp15"
         android:paddingVertical="@dimen/dp5"
         android:text="@string/hoy"
         android:textColor="@color/color5"
         android:textSize="@dimen/sp12"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_4"
+        app:layout_constraintDimensionRatio="3:1"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintStart_toStartOf="@+id/line_vertical2"
+        app:layout_constraintTop_toTopOf="@+id/iv_4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.33" />
 
     <TextView
         android:id="@+id/tv_2"
@@ -117,7 +175,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp28"
-        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="@string/amount20"
         android:textColor="@color/white"
@@ -127,37 +185,41 @@
 
     <TextView
         android:id="@+id/tv_4"
+        style="@style/text_view_ved_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dp28"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="@dimen/dp12"
         android:background="@drawable/tv_4_shape"
         android:fontFamily="@font/montserrat_semibold"
-        android:paddingHorizontal="@dimen/dp21"
-        android:paddingVertical="@dimen/dp7"
         android:text="@string/ver_detalles"
         android:textColor="@color/white"
-        android:textSize="@dimen/sp12"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/tv_3"
-        app:layout_constraintVertical_bias="0.148" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
 
     <TextView
         android:id="@+id/tv_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dp84"
-        android:layout_marginTop="0dp"
         android:fontFamily="@font/montserrat_medium"
         android:text="@string/mensaje"
         android:textColor="@color/white"
         android:textSize="@dimen/sp10"
-        app:layout_constraintEnd_toStartOf="@+id/tv_7"
-        app:layout_constraintStart_toEndOf="@+id/tv_4"
-        app:layout_constraintTop_toTopOf="@+id/tv_4" />
+        app:layout_constraintBottom_toBottomOf="@+id/tv_4"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/tv_4"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+
         android:id="@+id/tv_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -166,31 +228,31 @@
         android:textColor="@color/white"
         android:textSize="@dimen/sp14"
         app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toStartOf="@+id/tv_7"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tv_5"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toBottomOf="@+id/tv_5"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tv_7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/dp20"
-        android:padding="@dimen/dp10"
+        android:layout_marginBottom="16dp"
         android:text="@string/cake"
         android:textColor="@color/marine"
         android:textSize="@dimen/sp14"
+        app:layout_constraintBaseline_toTopOf="@+id/tv_6"
         app:layout_constraintBottom_toBottomOf="@+id/tv_6"
-        app:layout_constraintEnd_toEndOf="@+id/tv_1" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_6" />
 
     <TextView
-        android:fontFamily="@font/montserrat_semibold"
         android:id="@+id/tv_8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp8"
         android:layout_marginTop="@dimen/dp28"
+        android:fontFamily="@font/montserrat_semibold"
         android:text="@string/enviar_de_nuevo"
         android:textColor="@color/daskish_blur"
         android:textSize="@dimen/sp14"
@@ -199,10 +261,12 @@
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp9"
+        android:layout_marginTop="8dp"
+
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/tv_8">
 
@@ -215,12 +279,12 @@
     </HorizontalScrollView>
 
     <TextView
-        android:fontFamily="@font/montserrat_semibold"
         android:id="@+id/tv_9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp8"
         android:layout_marginTop="@dimen/dp19"
+        android:fontFamily="@font/montserrat_semibold"
         android:text="@string/actividad"
         android:textColor="@color/daskish_blur"
         android:textSize="@dimen/sp14"
@@ -228,11 +292,11 @@
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
     <TextView
-        android:fontFamily="@font/montserrat_medium"
         android:id="@+id/tv_10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/dp5"
+        android:fontFamily="@font/montserrat_medium"
         android:text="@string/ver_m_s_movimientos"
         android:textColor="@color/blue"
         android:textSize="@dimen/sp12"
@@ -243,8 +307,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/dp20"
-        android:layout_marginBottom="@dimen/dp10"
         android:layout_marginEnd="0dp"
+        android:layout_marginBottom="@dimen/dp10"
         app:cardCornerRadius="@dimen/dp10"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintDimensionRatio="2:1.1"

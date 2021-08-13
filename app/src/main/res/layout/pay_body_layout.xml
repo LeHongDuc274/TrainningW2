@@ -26,16 +26,24 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="@dimen/dp60" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41" />
+
     <View
         android:id="@+id/view2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/account_balance_shape"
-        app:layout_constraintDimensionRatio="3.25:1.9"
+        app:layout_constraintBottom_toTopOf="@id/line_4"
         app:layout_constraintEnd_toStartOf="@+id/line_2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/line_1"
-        app:layout_constraintTop_toTopOf="@+id/line_3" />
+        app:layout_constraintTop_toTopOf="@+id/line_3"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/iv_pay_1"
@@ -88,6 +96,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_pay_2" />
 
     <TextView
+        android:layout_marginEnd="@dimen/dp14"
         android:id="@+id/tv_pay_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -102,18 +111,19 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:layout_marginEnd="@dimen/dp14"
         android:id="@+id/tv_pay_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dp36"
         android:layout_marginTop="@dimen/dp3"
         android:text="@string/film_icon"
+        android:textSize="@dimen/sp14"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toStartOf="@+id/line_2"
-        app:layout_constraintHorizontal_bias="0.71"
-        app:layout_constraintStart_toEndOf="@+id/tv_pay_6"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toEndOf="@+id/iv_pay_1"
         app:layout_constraintTop_toTopOf="@+id/tv_pay_6"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.206" />
 
     <TextView
         android:id="@+id/tv_pay_4"
@@ -129,7 +139,7 @@
         android:textSize="@dimen/sp20"
         app:layout_constraintBottom_toBottomOf="@+id/tv_pay_2"
         app:layout_constraintEnd_toStartOf="@+id/line_2"
-        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintHorizontal_bias="0.867"
         app:layout_constraintStart_toEndOf="@+id/tv_pay_2"
         app:layout_constraintTop_toTopOf="@+id/tv_pay_1"
         app:layout_constraintVertical_bias="0.0" />
