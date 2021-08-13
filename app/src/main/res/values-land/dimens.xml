@@ -6,5 +6,6 @@
     <dimen name="sp16">28sp</dimen>
     <dimen name="sp10">18sp</dimen>
     <dimen name="sp20">36sp</dimen>
-
+    <dimen name="dp30a">60dp</dimen>
+    <dimen name="dp11a">18dp</dimen>
 </resources>

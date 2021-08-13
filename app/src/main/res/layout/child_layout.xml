@@ -24,7 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="@dimen/dp16" />
+        app:layout_constraintGuide_begin="@dimen/dp16"
+        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -51,6 +52,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.23" />
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline9"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_percent="0.1" />-->
 
 
     <com.google.android.material.circularreveal.cardview.CircularRevealCardView
@@ -118,21 +132,22 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/iv_2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/iv_4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="@dimen/dp30"
-        android:layout_marginEnd="@dimen/dp30"
+        android:layout_marginStart="@dimen/dp30a"
+
         android:src="@drawable/bitmap_copy"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toStartOf="@+id/line_vertical1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.115" />
 
     <TextView
         android:id="@+id/tv_1"
@@ -165,7 +180,7 @@
         android:id="@+id/tv_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dp28"
+        android:layout_marginStart="@dimen/dp30a"
         android:layout_marginTop="@dimen/dp6"
         android:fontFamily="@font/montserrat_medium"
         android:text="@string/nina_te_ha_enviado"
@@ -180,7 +195,7 @@
         android:id="@+id/tv_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dp28"
+        android:layout_marginStart="@dimen/dp30a"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="@string/amount20"
@@ -194,7 +209,7 @@
         style="@style/text_view_ved_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="@dimen/dp30a"
         android:layout_marginTop="@dimen/dp12"
         android:background="@drawable/tv_4_shape"
         android:fontFamily="@font/montserrat_semibold"
