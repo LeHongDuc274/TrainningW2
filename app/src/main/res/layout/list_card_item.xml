@@ -5,8 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/dp30"
-    android:background="@color/white_three"
-    app:cardCornerRadius="@dimen/dp5">
+    android:background="@drawable/card_item_background"
+    android:layout_marginStart="@dimen/dp24"
+    android:layout_marginEnd="@dimen/dp24"
+    >
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/col_1"
